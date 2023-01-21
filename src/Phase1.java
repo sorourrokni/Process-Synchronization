@@ -79,6 +79,7 @@ public class Phase1 {
         while (true) {
             Thread.sleep(500);
             System.out.println("num: " + num);
+            System.out.println(s.toString());
         }
     }
 

@@ -1,42 +1,45 @@
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class Semaphore {
 
     int value;
-    boolean []flag;
+    boolean[] flag;
     Queue<String> queue;
 
     public Semaphore() {
         value = 1;
         flag = new boolean[4];
+        Arrays.fill(flag, false);
         queue = new LinkedList<>();
     }
 
-    public void semWait(String name) {
+    public void semWait(String name) throws InterruptedException {
         value--;
 
-        if(value < 0) {
+        if (value < 0) {
             queue.add(name);
             int id = getId(name);
+            flag[id] = false;
+
             while (!flag[id]) {
+                Thread.sleep(1000);
                 // wait
             }
         }
-
-
     }
 
     public void semSignal() {
         value++;
 
-        if(value <= 0) {
-
+        if (queue.isEmpty()) {
+            value = 1;
+        } else {
+            String name = queue.poll();
+            int id = getId(name);
+            flag[id] = true;
         }
-        String next = queue.peek();
-        int id = getId(next);
-
-        flag[id] = true;
     }
 
     public int getId(String name) {
@@ -49,4 +52,12 @@ public class Semaphore {
         };
     }
 
+    @Override
+    public String toString() {
+        return "Semaphore{" +
+                "value=" + value +
+                ", flag=" + Arrays.toString(flag) +
+                ", queue=" + queue +
+                '}';
+    }
 }
