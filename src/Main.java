@@ -21,14 +21,14 @@ public class Main {
         });
         Thread t3 = new Thread(() -> {
             try {
-                phase1.div(3);
+                phase1.mul(2);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
         });
         Thread t4 = new Thread(() -> {
             try {
-                phase1.mul(2);
+                phase1.div(4);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

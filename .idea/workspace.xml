@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="67a969ca-3ead-4638-838b-011693f1e627" name="Changes" comment="add 3 class main, phase1 and semaphore to proj">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    <list default="true" id="67a969ca-3ead-4638-838b-011693f1e627" name="Changes" comment="implement semWait and semSignal">
+      <change beforePath="$PROJECT_DIR$/out/production/ProcessSync/Phase1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProcessSync/Phase1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProcessSync/Semaphore.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProcessSync/Semaphore.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Phase1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Phase1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Semaphore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Semaphore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +72,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674321212499</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement semWait and semSignal">
+      <created>1674326477718</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674326477718</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add 3 class main, phase1 and semaphore to proj" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 3 class main, phase1 and semaphore to proj" />
+    <MESSAGE value="implement semWait and semSignal" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement semWait and semSignal" />
   </component>
 </project>
